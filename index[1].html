@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pranav Bhosale - Embedded Systems Engineer & IoT Developer | Specialized in ESP32, ARM Microcontrollers, and IoT Solutions from Palghar, Maharashtra">
+    <meta name="keywords" content="Pranav Bhosale, Embedded Systems, IoT Developer, ESP32, ARM, C Programming, Palghar">
+    <meta name="author" content="Pranav Bhosale">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Pranav Bhosale - Embedded Systems Engineer & IoT Developer">
+    <meta property="og:description" content="Professional Portfolio of Pranav Bhosale showcasing IoT and Embedded Systems Projects">
+    <meta property="og:type" content="website">
+    <title>Pranav Bhosale | Embedded Systems Engineer | IoT Developer | Palghar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ===== PRELOADER ===== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="spinner-circle">
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
+                <div class="circle-3"></div>
+            </div>
+            <p class="loading-text">Loading Portfolio...</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-wrapper">
+            <div class="nav-container">
+                <a href="#home" class="nav-logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">Pranav Bhosale</span>
+                </a>
+                
+                <div class="hamburger-menu" id="hamburgerMenu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero-section">
+        <div class="animated-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+
+        <div class="hero-stars" id="heroStars"></div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- PROFILE IMAGE SECTION -->
+                <div class="profile-section">
+                    <div class="profile-image-wrapper">
+                        <!-- ⚠️ IMPORTANT: Replace the src URL with your actual LinkedIn profile photo -->
+                        <!-- Steps to add your photo:
+                             1. Go to your LinkedIn profile
+                             2. Right-click on your profile photo → Copy image link
+                             3. Paste it below in the src attribute
+                             Example: src="https://media.licdn.com/dms/image/..."
+                        -->
+                        <img src="https://via.placeholder.com/250/6366f1/ffffff?text=Pranav+Bhosale" 
+                             alt="Pranav Bhosale - Embedded Systems Engineer & IoT Developer" 
+                             class="profile-image"
+                             loading="lazy">
+                        <div class="profile-border-animation"></div>
+                        <div class="status-badge">
+                            <span class="status-dot"></span>
+                            Open to Opportunities
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HERO TEXT -->
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name-text typing" id="typingText">Pranav Bhosale</span>
+                        <span class="typing-cursor"></span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Embedded Systems Engineer <span class="separator">|</span> IoT Developer <span class="separator">|</span> Innovator
+                    </p>
+
+                    <p class="hero-description">
+                        Passionate embedded systems engineer specializing in IoT solutions, microcontroller firmware, and real-time systems. 
+                        Building intelligent connected devices using ESP32, ARM processors, and cloud integration for smart automation and industrial IoT applications.
+                    </p>
+
+                    <p class="hero-location">
+                        <i class="fas fa-map-marker-alt"></i> Palghar, Maharashtra 401404, India
+                    </p>
+
+                    <!-- CTA BUTTONS -->
+                    <div class="hero-buttons">
+                        <a href="https://www.linkedin.com/in/pranav-bhosale-496267346" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="btn btn-primary">
+                            <i class="fab fa-linkedin"></i> LinkedIn Profile
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class="fas fa-code"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <!-- SOCIAL LINKS -->
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pranav-bhosale-496267346" 
+                           target="_blank" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com" 
+                           target="_blank" class="social-icon" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:pranav.bhosale@example.com" class="social-icon" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCROLL INDICATOR -->
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll to explore</span>
+                <div class="mouse-wheel">
+                    <div class="mouse-icon">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-heading">
+                <span class="heading-line"></span>
+                About Me
+                <span class="heading-line"></span>
+            </h2>
+
+            <div class="about-wrapper">
+                <div class="about-content" data-aos="fade-right">
+                    <h3 class="about-title">Professional Background</h3>
+                    
+                    <!-- ⚠️ INSTRUCTIONS: Copy your LinkedIn "About" section here -->
+                    <p class="about-paragraph">
+                        I am a dedicated <strong>Embedded Systems Engineer</strong> and <strong>IoT Developer</strong> with expertise 
+                        in designing intelligent, connected devices that solve real-world problems. Based in <strong>Palghar, Maharashtra, India</strong>, 
+                        I specialize in firmware development for microcontrollers and building end-to-end IoT solutions.
+                    </p>
+
+                    <p class="about-paragraph">
+                        My technical expertise spans <strong>microcontroller programming</strong>, <strong>IoT protocol implementation</strong>, 
+                        <strong>real-time systems</strong>, and <strong>hardware-software integration</strong>. I have hands-on experience with 
+                        <strong>ESP32</strong>, <strong>ARM Cortex-M processors</strong>, and various wireless communication modules.
+                    </p>
+
+                    <p class="about-paragraph">
+                        I'm committed to continuous learning and staying updated with the latest embedded systems and IoT technologies. 
+                        My approach combines technical excellence with innovative problem-solving to deliver robust, scalable solutions.
+                    </p>
+
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">Tech Skills</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Clients</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-features" data-aos="fade-left">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h4>Embedded Systems</h4>
+                        <p>Microcontroller programming, firmware development, hardware integration</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h4>IoT Solutions</h4>
+                        <p>Connected devices, cloud integration, MQTT, real-time monitoring</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Software Development</h4>
+                        <p>C, Python, Assembly programming for embedded applications</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Hardware Design</h4>
+                        <p>PCB design, circuit design, sensor integration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-heading">
+                <span class="heading-line"></span>
+                Technical Skills
+                <span class="heading-line"></span>
+            </h2>
+
+            <div class="skills-wrapper">
+                <!-- PROGRAMMING LANGUAGES -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="category-title">
+                        <i class="fas fa-laptop-code"></i> Programming Languages
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">C Programming</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Assembly Language</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MICROCONTROLLERS -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="category-title">
+                        <i class="fas fa-microchip"></i> Microcontrollers & Platforms
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">ESP32</span>
+                                <span class="skill-level">92%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">ARM Cortex-M</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Arduino</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">STM32</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IoT & COMMUNICATION -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="category-title">
+                        <i class="fas fa-wifi"></i> IoT & Communication Protocols
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">MQTT Protocol</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">WiFi & Bluetooth</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">LoRaWAN</span>
+                                <span class="skill-level">82%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Cloud Platforms</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOOLS & SOFTWARE -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i> Tools & Software
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">PlatformIO</span>
+                                <span class="skill-level">92%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Git & GitHub</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Proteus & Multisim</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">KiCad & Eagle</span>
+                                <span class="skill-level">82%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKILL BADGES -->
+            <div class="skills-badges-section" data-aos="fade-up">
+                <h3 class="badge-title">Key Technologies</h3>
+                <div class="badges-container">
+                    <span class="skill-badge">C Programming</span>
+                    <span class="skill-badge">Embedded Systems</span>
+                    <span class="skill-badge">ARM Architecture</span>
+                    <span class="skill-badge">ESP32</span>
+                    <span class="skill-badge">IoT Development</span>
+                    <span class="skill-badge">MQTT</span>
+                    <span class="skill-badge">Real-Time Systems</span>
+                    <span class="skill-badge">Embedded Linux</span>
+                    <span class="skill-badge">Circuit Design</span>
+                    <span class="skill-badge">PCB Design</span>
+                    <span class="skill-badge">FreeRTOS</span>
+                    <span class="skill-badge">Sensor Integration</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-heading">
+                <span class="heading-line"></span>
+                Featured Projects
+                <span class="heading-line"></span>
+            </h2>
+
+            <!-- ⚠️ INSTRUCTIONS: Replace project images and details with your actual LinkedIn projects -->
+            <div class="projects-grid">
+                <!-- PROJECT 1 -->
+                <div class="project-card" data-aos="zoom-in">
+                    <div class="project-image-wrapper">
+                        <!-- Replace src with your project image URL -->
+                        <img src="https://via.placeholder.com/400x280/6366f1/ffffff?text=Clap+Switch+Circuit" 
+                             alt="Clap Switch using 555 IC" 
+                             class="project-image"
+                             loading="lazy">
+                        <div class="project-overlay">
+                            <button class="view-project-btn" onclick="openProjectModal(0)">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                        <span class="project-category">Hardware Design</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Clap Switch using 555 IC</h3>
+                        <p class="project-description">
+                            An intelligent analog circuit that detects and responds to sound claps using the NE555 timer IC. 
+                            Demonstrates analog circuit design and relay control principles.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">555 IC</span>
+                            <span class="tech-tag">Analog Circuits</span>
+                            <span class="tech-tag">Relay Control</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date"><i class="fas fa-calendar"></i> 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div class="project-card" data-aos="zoom-in">
+                    <div class="project-image-wrapper">
+                        <img src="https://via.placeholder.com/400x280/8b5cf6/ffffff?text=IoT+Automation" 
+                             alt="IoT Smart Automation System" 
+                             class="project-image"
+                             loading="lazy">
+                        <div class="project-overlay">
+                            <button class="view-project-btn" onclick="openProjectModal(1)">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                        <span class="project-category">IoT Development</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">IoT Smart Automation System</h3>
+                        <p class="project-description">
+                            A comprehensive IoT solution for home and industrial automation using ESP32. Features real-time 
+                            sensor monitoring, mobile app control, and cloud connectivity.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">ESP32</span>
+                            <span class="tech-tag">MQTT</span>
+                            <span class="tech-tag">AWS IoT</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date"><i class="fas fa-calendar"></i> 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3 -->
+                <div class="project-card" data-aos="zoom-in">
+                    <div class="project-image-wrapper">
+                        <img src="https://via.placeholder.com/400x280/ec4899/ffffff?text=Embedded+Systems" 
+                             alt="Embedded Systems Projects" 
+                             class="project-image"
+                             loading="lazy">
+                        <div class="project-overlay">
+                            <button class="view-project-btn" onclick="openProjectModal(2)">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                        <span class="project-category">Embedded Systems</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Embedded Systems Projects</h3>
+                        <p class="project-description">
+                            Collection of advanced embedded systems projects including ARM-based microcontroller programming, 
+                            real-time OS, device drivers, and sensor integration.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">ARM Cortex</span>
+                            <span class="tech-tag">Real-time OS</span>
+                            <span class="tech-tag">Drivers</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date"><i class="fas fa-calendar"></i> 2023-2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-heading">
+                <span class="heading-line"></span>
+                Professional Experience
+                <span class="heading-line"></span>
+            </h2>
+
+            <!-- ⚠️ INSTRUCTIONS: Copy your LinkedIn experience section here -->
+            <div class="experience-timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="experience-title">Embedded Systems Developer Intern</h3>
+                        <p class="experience-company">Tech Innovation Lab | Palghar</p>
+                        <p class="experience-period"><i class="fas fa-calendar"></i> 2023 - Present</p>
+                        <ul class="experience-details">
+                            <li>Developed firmware for ESP32-based IoT devices with MQTT connectivity</li>
+                            <li>Implemented real-time monitoring systems for industrial applications</li>
+                            <li>Designed and tested circuit prototypes for sensor integration</li>
+                            <li>Collaborated with cross-functional teams on IoT solution architecture</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="experience-title">IoT Project Associate</h3>
+                        <p class="experience-company">Digital Innovations Limited | Mumbai</p>
+                        <p class="experience-period"><i class="fas fa-calendar"></i> 2022 - 2023</p>
+                        <ul class="experience-details">
+                            <li>Built end-to-end IoT solutions for smart home automation</li>
+                            <li>Programmed ARM-based microcontrollers for embedded applications</li>
+                            <li>Integrated cloud platforms (AWS IoT) with embedded devices</li>
+                            <li>Performed firmware debugging and optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="experience-title">Freelance Embedded Systems Developer</h3>
+                        <p class="experience-company">Self-Employed | Palghar</p>
+                        <p class="experience-period"><i class="fas fa-calendar"></i> 2021 - Present</p>
+                        <ul class="experience-details">
+                            <li>Designed and developed custom IoT solutions for clients</li>
+                            <li>Created firmware for various microcontroller platforms</li>
+                            <li>Provided technical consultation on embedded systems</li>
+                            <li>Delivered multiple successful projects on time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EDUCATION -->
+            <div class="education-section" data-aos="fade-up">
+                <h3 class="section-subtitle">Education & Certifications</h3>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Bachelor's Degree</h4>
+                        <p>Electronics/Electrical Engineering</p>
+                        <p class="education-meta">University Name | 2020-2024</p>
+                    </div>
+                    <div class="education-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>IoT Developer Certification</h4>
+                        <p>Advanced IoT & Embedded Systems</p>
+                        <p class="education-meta">Online Learning Platform | 2023</p>
+                    </div>
+                    <div class="education-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>ARM Cortex-M Certification</h4>
+                        <p>Microcontroller Programming & Design</p>
+                        <p class="education-meta">ARM University Program | 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-heading">
+                <span class="heading-line"></span>
+                Get In Touch
+                <span class="heading-line"></span>
+            </h2>
+
+            <div class="contact-wrapper">
+                <!-- CONTACT INFO -->
+                <div class="contact-info-section" data-aos="fade-right">
+                    <h3>Contact Information</h3>
+                    
+                    <!-- ⚠️ UPDATE YOUR CONTACT DETAILS -->
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
+                            <a href="mailto:pranav.bhosale@example.com">pranav.bhosale@example.com</a>
+                            <p class="contact-note">Response within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/pranav-bhosale-496267346" target="_blank">
+                                Connect with me
+                            </a>
+                            <p class="contact-note">Professional network</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Palghar, Maharashtra 401404, India</p>
+                            <p class="contact-note">Available for meetings</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                            <p class="contact-note">Call or WhatsApp</p>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h4>Follow Me</h4>
+                        <div class="social-links-extended">
+                            <a href="https://www.linkedin.com/in/pranav-bhosale-496267346" 
+                               target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/pranavbhosale" 
+                               target="_blank" class="social-link">
+                                <i class="fab fa-github"></i> <span>GitHub</span>
+                            </a>
+                            <a href="https://twitter.com/pranav_bhosale" 
+                               target="_blank" class="social-link">
+                                <i class="fab fa-twitter"></i> <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTACT FORM -->
+                <form class="contact-form" id="contactForm" data-aos="fade-left">
+                    <h3>Send Me a Message</h3>
+                    <p class="form-subtitle">Let's discuss your next project!</p>
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required 
+                               placeholder="Your Name" class="form-input">
+                        <span class="form-error" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailAddress">Email Address *</label>
+                        <input type="email" id="emailAddress" name="emailAddress" required 
+                               placeholder="your@email.com" class="form-input">
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" 
+                               placeholder="+91 XXXXX XXXXX" class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required 
+                               placeholder="Project Inquiry / Collaboration" class="form-input">
+                        <span class="form-error" id="subjectError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required rows="6" 
+                                  placeholder="Tell me about your project..."
+                                  class="form-input"></textarea>
+                        <span class="form-error" id="messageError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectType">Project Type</label>
+                        <select id="projectType" name="projectType" class="form-input">
+                            <option value="">Select a category...</option>
+                            <option value="embedded">Embedded Systems</option>
+                            <option value="iot">IoT Development</option>
+                            <option value="consulting">Consulting</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+
+                    <p class="form-notice">Your privacy is important. Your information will not be shared.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Portfolio</h4>
+                    <p>Modern, fully responsive portfolio showcasing expertise in embedded systems and IoT. 
+                       Built with HTML, CSS & JavaScript.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/pranav-bhosale-496267346" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/pranavbhosale" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:pranav.bhosale@example.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pranav Bhosale. All Rights Reserved. | Designed with 
+                   <span class="heart-icon">❤️</span> using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PROJECT MODAL -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProjectModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+</body>
+</html>
